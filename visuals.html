@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="resources/css/styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="resources/js/d3.js"></script>
+</head>
+<body data-gr-c-s-loaded="true">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="me.html">About</a>
+      <a href="tools.html">Tools</a>
+      <a href="visuals.html">Cool Visuals</a>
+      <a href="storage.html">Back-end</a>
+      <a href="game.html">Game(In_Progress)</a>
+    </div>
+    <div class="jumbotron text-center" style="color:white; background-repeat: no-repeat; background-size: cover; padding-top: 250px; padding-bottom: 100px; background-image: url(&quot;//d33rxv6e3thba6.cloudfront.net/2016/11/585694100110bbd3464f1265/18131-ggmvm5.jpeg&quot;); border-radius: 0px; ">
+        <h1>Developer.</h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                //document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                //document.getElementById("main").style.marginLeft= "0";
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
+    </div>
+    <div id="visuals" style="padding:3%">
+        <h2>Front-End Visuals</h2>
+        <ul style="font-family:Arial, Helvetica, sans-serif; font-size:25px">
+            <li onmousedown="renderGraph()">D3.js</li>
+            <li>GoJS</li>
+            <li>jQuery</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>Vue.js</li>
+            <li>HTML Formatting</li>
+        </ul>
+    </div>
+    <style>
+        svg {
+            margin-top: 20%;
+            margin-left: 10%;
+            width:500px;
+            height:500px;
+        }
+        button {
+            float: left;
+            margin-top: 100px;
+            margin-left: 70px;
+            color: white;
+            background-color: black;
+        }
+
+        line {
+            stroke:#ddd;
+            shape-rendering: crispEdges;
+        }
+
+        text {
+            text-anchor:middle;
+        }
+
+        circle {
+            fill:red;
+            stroke:red;
+            fill-opacity:0.38;
+        }
+        .axis line {
+            fill:none;
+            stroke:#ddd;
+            shape-rendering: crispEdges;
+        }
+        .axis path {
+            fill:none;
+        }
+        .axis text {
+            font-size:0.7em;
+            fill:#555;
+            font-family:sans-serif;
+        }
+    </style>
+    <script>
+
+        var data1 = [18,35,40,55,80];
+        var data2 = [50,33,45,39,20,23,25,40];
+        var data3 = [10,20,30, 40, 50];
+        var data4 = [11,21,31,41,31,21,11];
+        var data5 = [1,100,2,80,3,50,4,30];
+
+        var dataIndex=1;
+        var xBuffer=100;
+        var yBuffer=150;
+        var lineLength=400;
+
+        var svgDoc = d3.select("body").append("svg")
+
+        svgDoc.append("text")
+            .attr("x",xBuffer+(lineLength/2))
+            .attr("y",50)
+            .text("data"+dataIndex);
+
+        svgDoc.append("line")
+            .attr("x1",xBuffer)
+            .attr("y1",yBuffer)
+            .attr("x1",xBuffer+lineLength)
+            .attr("y2",yBuffer)
+
+        svgDoc.append("g").selectAll("circle")
+            .data(eval("data"+dataIndex))
+            .enter()
+            .append("circle")
+            .attr("cx",function(d,i){
+                var spacing = lineLength/(eval("data"+dataIndex).length);
+                return xBuffer+(i*spacing)
+            })
+            .attr("cy",yBuffer)
+            .attr("r",function(d,i){return d});
+
+        d3.select("body").append("button")
+            .text("try it!")
+            .on("click",function(){
+
+                if (dataIndex==1) {
+                    dataIndex=2;
+                } else if (dataIndex==2){
+                    dataIndex=3;
+                }
+                else if (dataIndex==3){
+                    dataIndex=4;
+                } else if (dataIndex==4){
+                    dataIndex=5;
+                }
+                else {
+                    dataIndex=1;
+                }
+
+                var circle = svgDoc.select("g").selectAll("circle")
+                    .data(eval("data"+dataIndex));
+
+                circle.exit().remove();
+                circle.enter().append("circle")
+                    .attr("r",0);
+
+                circle.transition()
+                    .duration(1000)
+                    .attr("cx",function(d,i){
+                        var spacing = lineLength/(eval("data"+dataIndex).length);
+                        return xBuffer+(i*spacing)
+                    })
+                    .attr("cy",yBuffer)
+                    .attr("r",function(d,i){return d});
+
+                d3.select("text").text("data"+dataIndex);
+
+            });
+    </script><svg><text x="300" y="50">data1</text><line x1="500" y1="150" y2="150"></line><g><circle cx="100" cy="150" r="18"></circle><circle cx="180" cy="150" r="35"></circle><circle cx="260" cy="150" r="40"></circle><circle cx="340" cy="150" r="55"></circle><circle cx="420" cy="150" r="80"></circle></g></svg><button>try it!</button>
+</body>
+</html> 

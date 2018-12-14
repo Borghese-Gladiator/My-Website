@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="resources/css/styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script src="https://download.affectiva.com/js/3.2.1/adapter-1.4.0.js"></script>
+  <script src="https://download.affectiva.com/js/3.2.1/affdex.js"></script>
+  <script src="resources/js/email.js"></script>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="me.html">About</a>
+      <a href="tools.html">Tools</a>
+      <a href="visuals.html">Cool Visuals</a>
+      <a href="storage.html">Back-end</a>
+      <a href="game.html">Game(In_Progress)</a>
+    </div>
+    
+    <div class="jumbotron text-center" style="color:white; background-repeat: no-repeat; background-size: cover; padding-top: 250px; padding-bottom: 100px; background-image: url(&quot;//d33rxv6e3thba6.cloudfront.net/2016/11/585694100110bbd3464f1265/18131-ggmvm5.jpeg&quot;); border-radius: 0px; ">
+      <h1>Developer.</h1>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      <script>
+          function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              //document.getElementById("main").style.marginLeft = "250px";
+              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
+          
+          function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              //document.getElementById("main").style.marginLeft= "0";
+              document.body.style.backgroundColor = "white";
+          }
+        </script>
+    </div>
+
+    <div id="main" class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div id="tools" style="padding:3%">
+            <h2>My Tools</h2>
+            <ul style="font-family:Arial, Helvetica, sans-serif; font-size:25px">
+              <li>Bank Tool</li>
+              <li>Profile Manager</li>
+              <li>Travel Planner</li>
+              <li>Image OCR</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="visuals" style="padding:3%">
+            <h2>Front-End Visuals</h2>
+            <ul style="font-family:Arial, Helvetica, sans-serif; font-size:25px">
+              <li>D3.js</li>
+              <li>GoJS</li>
+              <li>jQuery</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Vue.js</li>
+              <li>HTML Formatting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="storage" style="padding:3%">
+          <h2>Back-end Work</h2>
+          <ul style="font-family:Arial, Helvetica, sans-serif; font-size:25px">
+            <li>MongoDB</li>
+            <li>SQL Server</li>
+            <li>MySQL</li>
+            <li>Google Cloud SQL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div id="game" style="padding:3%">
+          <h2>Unity Game (with C#)</h2>
+          <h4>Features</h4>
+          <ul style="font-family:Arial, Helvetica, sans-serif; font-size:18px">
+              <li>Cool</li>
+              <li>Very Cool</li>
+            </ul>
+          <h4>Description</h4>
+          <p style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:18px">
+            Sample description.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

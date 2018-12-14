@@ -1,0 +1,102 @@
+<!--<div class="center-bg-image container-fluid container-parallax secondary minHeight80" data-title="Container" data-border-type="All" style="background-repeat: no-repeat; background-size: cover; padding-top: 250px; padding-bottom: 100px; background-image: url(&quot;//d33rxv6e3thba6.cloudfront.net/2016/11/585694100110bbd3464f1265/18131-ggmvm5.jpeg&quot;); border-radius: 0px; min-height: 775.2px;">
+      <div class="simblaEL containerHolder" data-drag="P82" id="P82">
+         <div class="container center-bg-image" data-title="Container">
+            <div class="simblaEL tcH" data-drag="P285" id="P285" style="position: relative;">
+               <div class="textContainer H1" style="">
+                  <h1>
+                     <div style="text-align: center;">IT is Awesome</div>
+                  </h1>
+               </div>
+            </div>
+            <div class="simblaEL tcH" data-drag="P286" id="P286" style="">
+               <div class="textContainer H2" style="">
+                  <h2>
+                     <div style="text-align: center;">We love IT and would like to help you figure out that it is awesome</div>
+                  </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="simblaEL containerHolder" data-drag="MP296" id="MP296" style="">
+      <div class="container center-bg-image" data-title="Container">
+         <div class="row simblaEL rDivider" data-drag="MP297" id="MP297" data-title="Row" style="">
+            <div class="sDivider col-md-2 index0" data-colsize="2" data-title="Column">
+               <div class="simblaEL simblaImg" data-drag="MP3" id="MP3" style="position: relative;"><a href="http://sites.simbla.com/99ab09ff-82ff-44e5-03ec-90764affa7ef/" draggable="false"><img draggable="false" class="" alt="templatelogo.png" data-id="" title="templatelogo.png" style="padding-top: 10px;" src="//d33rxv6e3thba6.cloudfront.net/53ea2a17551d5f2579c09f7f/621-4vv2uo.png"></a></div>
+            </div>
+            <div class="sDivider col-md-10 index1" data-colsize="10" data-title="Column">
+               <header data-title="Header" class="simblaEL container-fluid sticky shadow-none" data-drag="MP298" id="MP298" data-slide-type="none" data-opacity="64" data-style-class="secondary" style="position: relative !important; padding-top: 20px;">
+                  <nav class="simblaEL menuHolder2 navbar navbar-default" data-drag="MP299" id="MP299" data-menu-id="5bd7f1a6a45c410010da1a22" data-type="none" data-font="Raleway" data-font-size="14" data-group-type="horizontal" data-font-weight="Normal" data-font-weight-hover="Normal" data-font-weight-current="Bold" data-font-color="#ffffff" data-font-color-hover="#ff9857" data-font-color-current="#ff9857" data-icon-color="" data-icon-color-hover="" data-icon-color-current="" data-ind-color="" data-ind-color-hover="" data-ind-color-current="" style="">
+                     <div class="container-fluid">
+                        <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="[data-drag=&quot;MP299&quot;] .navbar-collapse"><span><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span></button></div>
+                        <div class="collapse navbar-collapse">
+                           <ul class="nav navbar-nav">
+                              <li><a style="font-family: Raleway; font-size: 14px; line-height: 14px; color: rgb(255, 152, 87); font-weight: bold; border: none; background-color: transparent; border-radius: 0px; margin-right: 0px; margin-left: 0px;" class=" current" href=""><span>Home</span></a></li>
+                              <li><a style="font-family: Raleway; font-size: 14px; line-height: 14px; color: rgb(255, 255, 255); font-weight: normal; border: none; background-color: transparent; border-radius: 0px; margin-right: 0px; margin-left: 0px;" class="" href="/b5156272-bbfd-24ed-4793-01dbf1c643e1/about"><span>About</span></a></li>
+                              <li><a style="font-family: Raleway; font-size: 14px; line-height: 14px; color: rgb(255, 255, 255); font-weight: normal; border: none; background-color: transparent; border-radius: 0px; margin-right: 0px; margin-left: 0px;" class="" href="/b5156272-bbfd-24ed-4793-01dbf1c643e1/services"><span>Services</span></a></li>
+                              <li><a style="font-family: Raleway; font-size: 14px; line-height: 14px; color: rgb(255, 255, 255); font-weight: normal; border: none; background-color: transparent; border-radius: 0px; margin-right: 0px; margin-left: 0px;" class="" href="/b5156272-bbfd-24ed-4793-01dbf1c643e1/downloads"><span>Downloads</span></a></li>
+                              <li><a style="font-family: Raleway; font-size: 14px; line-height: 14px; color: rgb(255, 255, 255); font-weight: normal; border: none; background-color: transparent; border-radius: 0px; margin-right: 0px; margin-left: 0px;" class="" href="/b5156272-bbfd-24ed-4793-01dbf1c643e1/contact_us"><span>Contact Us</span></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </nav>
+               </header>
+            </div>
+         </div>
+      </div>
+   </div> -->
+
+   <!-- <div class="w3-row w3-light-grey w3-hide-medium w3-hide-small">
+      <div class="w3-col l6" style="padding-top:40px;padding:3%;">
+        <h3>CSS Example:</h3>
+        <div class="w3-code cssHigh notranslate w3-card-2 w3-border-green"><span style="color:brown">
+      body <span style="color:black">{</span><span style="color:red"><br>
+      &nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>
+      h1 <span style="color:black">{</span><span style="color:red"><br>
+      &nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>
+      &nbsp;&nbsp;&nbsp; text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>
+      p <span style="color:black">{</span><span style="color:red"><br>
+      &nbsp;&nbsp;&nbsp; font-family<span style="color:mediumblue"><span style="color:black">:</span> verdana<span style="color:black">;</span></span><br>
+      &nbsp;&nbsp;&nbsp; font-size<span style="color:mediumblue"><span style="color:black">:</span> 20px<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+        </span></div>
+        <a href="/css/tryit.asp?filename=trycss_default" target="_blank" class="w3-button w3-theme w3-hover-green w3-hover-shadow">Try it Yourself »</a>
+      </div>
+      <div class="w3-col l6 w3-center" style="padding:3%">
+        <h1>CSS</h1>
+        <p class="w3-xlarge">The language for styling web pages</p>
+        <a href="/css/default.asp" class="w3-button w3-dark-grey">LEARN CSS</a>
+        <a href="/cssref/default.asp" class="w3-button w3-dark-grey">CSS REFERENCE</a>
+      </div>
+    </div>
+    
+    
+    
+    <div class="w3-row">
+      <div class="w3-col l6 w3-center" style="padding:3%">
+      <h1 class="w3-jumbo">JavaScript</h1>
+      <p class="w3-xlarge w3-text-dark-grey">The language for programming web pages</p>
+      <a href="/js/default.asp" class="w3-button w3-dark-grey">LEARN JAVASCRIPT</a>
+      <a href="/jsref/default.asp" class="w3-button w3-dark-grey">JAVASCRIPT REFERENCE</a>
+      </div>
+      <div class="w3-col l6" style="padding:3%">
+      <div class="w3-hide-small w3-card-2 w3-light-grey" style="padding:16px;">
+        <h3>JavaScript Example:</h3>
+        <div class="w3-code notranslate w3-card-2 w3-border-green">
+        <div class="htmlHigh">
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span>
+        </div>
+        <div class="jsHigh"><span style="color:black">
+    <span style="color:mediumblue">function</span> myFunction() {<br><span style="color:red">
+    </span>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">var</span> x = document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>);<br><span style="color:red">
+    </span>&nbsp;&nbsp;&nbsp; x.<span style="color:black">style</span>.<span style="color:black">fontSize</span> = <span style="color:brown">"25px"</span>; <br><span style="color:red">
+    </span>&nbsp;&nbsp;&nbsp; x.<span style="color:black">style</span>.<span style="color:black">color</span> = <span style="color:brown">"red"</span>; <br>}<br><span style="color:red">
+    </span>    </span></div>
+        <div class="htmlHigh">
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br><br>
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> onclick<span style="color:mediumblue">="myFunction()"</span></span><span style="color:mediumblue">&gt;</span></span>Click Me!<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span>
+        </div>
+        </div>
+        <a href="/js/tryit.asp?filename=tryjs_default" target="_blank" class="w3-button w3-theme w3-hover-green w3-hover-shadow">Try it Yourself »</a>
+      </div>
+      </div>
+    </div>-->
