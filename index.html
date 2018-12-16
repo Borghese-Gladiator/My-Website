@@ -14,6 +14,10 @@
     <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <style>
+      .main {
+        padding: 16px;
+        margin-top: 30px;
+      }
       .icon-img {
         margin: 0 auto;
         max-height: 200px;
@@ -29,7 +33,35 @@
         margin-top: 0%;
         margin-bottom: 0%;
       }
-      .topnav-bar a {
+      
+      /*.navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }*/
+      .navbar {
+        overflow: hidden;
+        float: right;
+        top: 0;
+      }
+      .navbar a {
         float: left;
         color: #f2f2f2;
         text-align: center;
@@ -37,16 +69,13 @@
         text-decoration: none;
         font-size: 17px;
       }
-      .topnav-bar a:hover {
+      .navbar a:hover {
         background-color:#d9d9d9;
+        color:black;
       }
-      .topnav-bar a.active {
+      .navbar a.active {
         background-color: #4CAF50;
         color: white;
-      }
-      .topnav-bar {
-        overflow: hidden;
-        float: right;
       }
       .btn {
         background-color: rgb(137, 198, 218);
@@ -97,15 +126,17 @@
   </style>
 </head>
 <body>
-  <div style="float: right">
-    <nav class="topnav-bar" style="background-color: #808080">
-        <a href="scrollPotrfolio()">Home</a>
-        <a href="me.html">About</a>
-        <a href="tools.html">Tools</a>
-        <a href="visuals.html">Cool Visuals</a>
-        <a href="storage.html">Back-end</a>
-    </nav>
+
+  <div style="float: right; position: fixed">
+    <div class="navbar" style="background-color: #808080;">
+      <a href="index.html">Home</a>
+      <a href="me.html">About</a>
+      <a href="tools.html">Tools</a>
+      <a href="visuals.html">Cool Visuals</a>
+      <a href="storage.html">Back-end</a>
+    </div>
   </div>
+    
 <!--    <button onClick="scrollHome()">Home</button>
     <button onClick="scrollAbout()">About</button>
     <button onClick="scrollPortfolio()">Portfolio</button>
@@ -120,73 +151,74 @@
         window.scrollTo(0, 300);
       }
     </script>-->
-    <div class="jumbotron text-center _animate-background transition nopad" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;}" style="background-repeat: no-repeat; background-size: 100% 100%; background-color: transparent;  background-image: url(&quot;resources/images/bz26-DEC-Taiwan.jpg&quot;); min-height: 0px; background-attachment: fixed; padding-top: 410px; padding-bottom: 430px;">
-      <h1><p style="font-size: 130%;"><strong><font color="white">Developer.</font></strong></p></h1>
+    
+  <div class="jumbotron text-center _animate-background transition" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;}" style="background-repeat: no-repeat; background-size: 100% 100%; background-color: transparent;  background-image: url(&quot;resources/images/bz26-DEC-Taiwan.jpg&quot;); min-height: 0px; background-attachment: fixed; padding-top: 410px; padding-bottom: 430px;">
+    <h1><p style="font-size: 130%;"><strong><font color="white">Developer.</font></strong></p></h1>
+  </div>
+  <section class="jumbotron text-center">
+    <p style="font-size: 200%"><em>Hey, I'm</em></p>
+    <p class="dash-highlight" style="font-size: 400%"><span><strong>Timothy Shee</strong></span></p>
+    <p style="font-size: 200%">Web Developer || Hackathon Lover || Gamer </p>
+    <button class="btn"><a href="https://www.linkedin.com/in/timothy-shee-aa46a5170/"><i class="fab fa-linkedin fa-2x" alt="Icon"></i></a></button>
+    <button class="btn"><a href="https://github.com/timothy-shee"><i class="fab fa-github fa-2x" alt="Icon"></i></a></button>
+  </section>
+    
+  <section id="projects" class="section scrollspy" style="background-color:#f2f2f2">
+    <h3 class="page-title white-text green"><font size="30" color="white"><span>Hackathons</span></font></h3>
+    <hr>
+    <div class="row nopad">
+      <div class="column">
+        <p align="right">
+            <img src="resources/images/trshy-logo-lg.png" style="width:300px;height:200px;">
+        </p>
+      </div>
+      <div class="column">
+        <h2 class="nopad"><font size="30" color="#3366ff">MAHacks</font></h2>
+        <p class="nopad"><font size="5"color="#669900">Trshy</font></p>
+        <p class="nopad"><font size="5">at Prudential Center</font></p>
+        <p class="nopad"><font size="3">See it live: <a href="https://www.trshy.tech/">here</a></font></p>
+        <p align="left">
+          A utility tool to locate nearby trashcans.</br>
+          Allows users to mark locations of trashcans for other users.</br>
+          Currently uses Detroit's trashcan database to show nearby trashcans
+        </p>
+      </div>
     </div>
-    <section class="jumbotron text-center">
-      <p style="font-size: 200%"><em>Hey, I'm</em></p>
-      <p class="dash-highlight" style="font-size: 400%"><span><strong>Timothy Shee</strong></span></p>
-      <p style="font-size: 200%">Web Developer || Hackathon Lover || Gamer </p>
-      <button class="btn"><a href="https://www.linkedin.com/in/timothy-shee-aa46a5170/"><i class="fab fa-linkedin fa-2x" alt="Icon"></i></a></button>
-      <button class="btn"><a href="https://github.com/timothy-shee"><i class="fab fa-github fa-2x" alt="Icon"></i></a></button>
-    </section>
-      
-    <section id="projects" class="section scrollspy" style="background-color:#f2f2f2">
-      <h3 class="page-title white-text green"><font size="30" color="white"><span>Hackathons</span></font></h3>
-      <hr>
-      <div class="row nopad">
-        <div class="column">
-          <p align="right">
-              <img src="resources/images/trshy-logo-lg.png" style="width:300px;height:200px;">
+    <div class="row nopad">
+      <div class="column nopad">
+          <h2 class="nopad" align="right"><font size="30" color="#3366ff">HackWITus</font></h2>
+          <p class="nopad" align="right"><font size="5" color="#669900">Behaza</font></p>
+          <p class="nopad" align="right"><font size="5">at Wentworth Institute of Technology</font></p>
+          <p class="nopad" align="right">    
+            Expedited connecting barbers with people. </br>
+            Users the wait times of nearby barber shops. </br>
+            Teamate plans to continue project in free time. </br>
           </p>
-        </div>
-        <div class="column">
-          <h2><font size="30" color="#3366ff">MAHacks</font></h2>
-          <p><font size="5"color="#669900">Trshy</font></p>
-          <p><font size="5">at Prudential Center</font></p>
-          <p><font size="3">See it live: <a href="https://www.trshy.tech/">here</a></font></p>
-          <p align="left">
-            A utility tool to locate nearby trashcans.</br>
-            Allows users to mark locations of trashcans for other users.</br>
-            Currently uses Detroit's trashcan database to show nearby trashcans
-          </p>
-        </div>
       </div>
-      <div class="row nopad">
-        <div class="column nopad">
-            <h2 align="right"><font size="30" color="#3366ff">HackWITus</font></h2>
-            <p align="right"><font size="5" color="#669900">Behaza</font></p>
-            <p align="right"><font size="5">at Wentworth Institute of Technology</font></p>
-            <p align="right">    
-              Expedited connecting barbers with people. </br>
-              Users the wait times of nearby barber shops. </br>
-              Teamate plans to continue project in free time. </br>
-            </p>
-        </div>
-        <div class="column">
-          <p align="left"> 
-            <img src="resources/images/barberslogo.png" style="width:400px;height:100px;">
-          </p>
-        </div>
+      <div class="column">
+        <p align="left"> 
+          <img src="resources/images/barberslogo.png" style="width:400px;height:100px;">
+        </p>
       </div>
-      <div class="row nopad">
-        <div class="column">
-          <p align="right">
-              <img src="resources/images/hackumass.png" style="width:200px;height:200px;">
-          </p>
-        </div>
-        <div class="column">
-          <h2><font size="30" color="#3366ff">HackUMass</font></h2>
-          <p><font size="5" color="#669900">Air Keys</font></p>
-          <p><font size="5">at UMass Amherst</font></p>
-          <p align="left"> 
-              Created a motion activated music player that </br>
-              uses Leap Motion to detect gestures. </br>
-              These gestures are linked to media commands </br>
-              and can be used to control any music player.
-          </p>
-        </div>
+    </div>
+    <div class="row nopad">
+      <div class="column">
+        <p align="right">
+            <img src="resources/images/hackumass.png" style="width:200px;height:200px;">
+        </p>
       </div>
+      <div class="column">
+        <h2 class="nopad"><font size="30" color="#3366ff">HackUMass</font></h2>
+        <p class="nopad"><font size="5" color="#669900">Air Keys</font></p>
+        <p class="nopad"><font size="5">at UMass Amherst</font></p>
+        <p class="nopad" align="left"> 
+            Created a motion activated music player that </br>
+            uses Leap Motion to detect gestures. </br>
+            These gestures are linked to media commands </br>
+            and can be used to control any music player.
+        </p>
+      </div>
+    </div>
   </section>
   <!--<section id="projects">
     Bank Tool, add some tutorial projects I did
@@ -201,9 +233,9 @@
           <h4 class="brown-text light">HTML/CSS</h4>
           <div class="row text-center">
             <div class="col s4 m2"><img alt src="resources/images/html-5-icon.png" class="responsive-img">HTML5</div>
-            <div class="col s4 m2"><img alt src="resources/images/html-5-icon.png" class="responsive-img">JSX</div>
-            <div class="col s4 m2"><img alt src="resources/images/html-5-icon.png" class="responsive-img">CSS3</div>
-            <div class="col s4 m2"><img alt src="resources/images/html-5-icon.png" class="responsive-img">Bootstrap</div>
+            <div class="col s4 m2"><img alt src="resources/images/2000px-React-icon.svg.png" class="responsive-img">JSX</div>
+            <div class="col s4 m2"><img alt src="resources/images/css3.png" class="responsive-img">CSS3</div>
+            <div class="col s4 m2"><img alt src="resources/images/bootstrap-226077.png" class="responsive-img">Bootstrap</div>
           </div>
         </div>
       </div>
@@ -211,10 +243,10 @@
         <div class="card-content">
           <h4 class="brown-text light">JavaScript</h4>
           <div class="row text-center">
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">React</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">jQuery</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Angular</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Node</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/2000px-React-icon.svg.png" class="responsive-img">React</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/jquery.png" class="responsive-img">jQuery</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/angular-icon-logo-png-transparent.png" class="responsive-img">Angular</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/nodejs.png" class="responsive-img">Node</div>
           </div>
         </div>
       </div>
@@ -222,13 +254,13 @@
         <div class="card-content">
           <h4 class="brown-text light">Languages</h4>
           <div class="row text-center">
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Java</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Python</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">JavaScript</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/java.png" class="responsive-img">Java</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/2000px-Python-logo-notext.svg.png" class="responsive-img">Python</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/javascript_633988.png" class="responsive-img">JavaScript</div>
           </div>
         </div>
       </div>
-      <div class="card">
+<!--      <div class="card">
         <div class="card-content">
           <h4 class="brown-text light">Web Servers</h4>
           <div class="row text-center">
@@ -237,15 +269,15 @@
             <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Express</div>
           </div>
         </div>
-      </div>
+      </div>-->
       <div class="card">
         <div class="card-content">
           <h4 class="brown-text light">Backend</h4>
           <div class="row text-center">
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">MongoDB</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">MySQL</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Firebase</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Django</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/mongodb.png" class="responsive-img">MongoDB</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/mysql.png" class="responsive-img">MySQL</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/google_firebase-512.png" class="responsive-img">Firebase</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/django-1-282754.png" class="responsive-img">Django</div>
           </div>
         </div>
       </div>
@@ -253,10 +285,10 @@
         <div class="card-content">
           <h4 class="brown-text light">Build Tools</h4>
           <div class="row text-center">
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Gradle</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Maven</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Webpack</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Ant</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/gradle-icon-512x512.png" class="responsive-img">Gradle</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/maven.png" class="responsive-img">Maven</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/webpack-icon-square-big.png" class="responsive-img">Webpack</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/1200px-Apache-Ant-logo.svg.png" class="responsive-img">Ant</div>
           </div>
         </div>
       </div>
@@ -264,10 +296,10 @@
         <div class="card-content">
           <h4 class="brown-text light">OS-Related</h4>
           <div class="row text-center">
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Windows</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">CentOS</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">VirtualBox</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">VMWare</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/win10.png" class="responsive-img">Windows</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/centos.png" class="responsive-img">CentOS</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/Virtualbox_logo.png" class="responsive-img">VirtualBox</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/VMware-icon.png" class="responsive-img">VMWare</div>
           </div>
         </div>
       </div>
@@ -275,33 +307,38 @@
         <div class="card-content">
           <h4 class="brown-text light">Other</h4>
           <div class="row text-center">
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Jira</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Jenkins</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">GitLab</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Heroku</div>
-            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">PCF</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/jira-icon.png" class="responsive-img">Jira</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/jenkins-logo.png" class="responsive-img">Jenkins</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/gitlab-icon.png" class="responsive-img">GitLab</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/heroku.png" class="responsive-img">Heroku</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/Pivotal-Cloud-Foundry-Logo.png" class="responsive-img">PCF</div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <section>
-    <h2 class="text-center">At hackathons, I've worked with full stacks</h2>
-    <div align="center" style="size: 2000px 1000px">
-      <div style="display: inline-block; text-align: left;">
-          <p class="leftalign" style="font-size: 170%">frontend: React, Angular, and Vue.js</p>
-          <p class="leftalign" style="font-size: 170%">backend: Firebase, Django, Flask, Jersey </p>
-          <p class="leftalign" style="font-size: 170%">database: MongoDB, MySQL, SQL Server</p>
-          <p class="leftalign" style="font-size: 170%">languages: Java, Python, JavaScript</p>
+  <section id="experience" class="section scrollspy" style="background-color:#e6f0ff">
+      <h3 class="page-title white-text green"><font size="30" color="white">PROJECTS</font></h3>
+      <hr> 
+  </section>
+  <section id="experience" class="section scrollspy" style="background-color:#f5e6ff">
+      <h3 class="page-title white-text green"><font size="30" color="white">EXPERIENCE</font></h3>
+      <hr> 
+  </section>
+<!--<section>
+      <h2 class="text-center">At hackathons, I've worked with full stacks</h2>
+      <div align="center" style="size: 2000px 1000px">
+        <div style="display: inline-block; text-align: left;">
+            <p class="leftalign" style="font-size: 170%">frontend: React, Angular, and Vue.js</p>
+            <p class="leftalign" style="font-size: 170%">backend: Firebase, Django, Flask, Jersey </p>
+            <p class="leftalign" style="font-size: 170%">database: MongoDB, MySQL, SQL Server</p>
+            <p class="leftalign" style="font-size: 170%">languages: Java, Python, JavaScript</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="jumbotron nopad">
-    <h1><p class="text-center" style="font-size: 60%"><strong>Here's what I've done so far</strong></p></h1>
-    <h5><font color="green">Position: Software Engineering Intern</font></h5>
-  </section>
-  </div>
-</div>
+    </section>
+    <section class="jumbotron nopad">
+      <h1><p class="text-center" style="font-size: 60%"><strong>Here's what I've done so far</strong></p></h1>
+      <h5><font color="green">Position: Software Engineering Intern</font></h5>
+    </section> -->
 </body>
 </html> 
