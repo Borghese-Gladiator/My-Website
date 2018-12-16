@@ -1,100 +1,307 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="resources/css/styles.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <script src="https://download.affectiva.com/js/3.2.1/adapter-1.4.0.js"></script>
-  <script src="https://download.affectiva.com/js/3.2.1/affdex.js"></script>
-  <script src="resources/js/email.js"></script>
+    <meta charset="utf-8">
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="style.css">
+    <title>Timothy Shee | Developer Intern</title>
+    <meta property="og:title" content="Timothy Shee | Developer Intern">
+    <!-- <link rel="stylesheet" href="resources/css/styles.css" />-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <style>
+      .icon-img {
+        margin: 0 auto;
+        max-height: 200px;
+        max-width: 200px;
+        padding-bottom: 10px;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+        width: 256px;
+        height: 256px;
+      }
+      .nopad {
+        margin-top: 0%;
+        margin-bottom: 0%;
+      }
+      .topnav-bar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav-bar a:hover {
+        background-color:#d9d9d9;
+      }
+      .topnav-bar a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+      .topnav-bar {
+        overflow: hidden;
+        float: right;
+      }
+      .btn {
+        background-color: rgb(137, 198, 218);
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16 px;
+        cursor: pointer;
+      }
+      /* Darker background on mouse-over */
+      .btn:hover {
+        background-color: RoyalBlue;
+      }
+      .left-col-align {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+      }
+      .right-col-align {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      p.align-right {
+        text-align: right;
+      }
+      .dash-highlight { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:10px 0 20px; } 
+      .dash-highlight span { background:#fff; padding:0 10px; }
+  </style>
 </head>
 <body>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="me.html">About</a>
-      <a href="tools.html">Tools</a>
-      <a href="visuals.html">Cool Visuals</a>
-      <a href="storage.html">Back-end</a>
-      <a href="game.html">Game(In_Progress)</a>
+  <div style="float: right">
+    <nav class="topnav-bar" style="background-color: #808080">
+        <a href="scrollPotrfolio()">Home</a>
+        <a href="me.html">About</a>
+        <a href="tools.html">Tools</a>
+        <a href="visuals.html">Cool Visuals</a>
+        <a href="storage.html">Back-end</a>
+    </nav>
+  </div>
+<!--    <button onClick="scrollHome()">Home</button>
+    <button onClick="scrollAbout()">About</button>
+    <button onClick="scrollPortfolio()">Portfolio</button>
+    <script>
+      function scrollHome() {
+        window.scrollTo(0,0);
+      }
+      function scrollAbout() {
+        window.scrollTo(0,100);
+      }
+      function scrollPortfolio() {
+        window.scrollTo(0, 300);
+      }
+    </script>-->
+    <div class="jumbotron text-center _animate-background transition nopad" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;}" style="background-repeat: no-repeat; background-size: 100% 100%; background-color: transparent;  background-image: url(&quot;/resources/images/bz26-DEC-Taiwan.jpg&quot;); min-height: 0px; background-attachment: fixed; padding-top: 410px; padding-bottom: 430px;">
+      <h1><p style="font-size: 130%;"><strong><font color="white">Developer.</font></strong></p></h1>
     </div>
-    
-    <div class="jumbotron text-center" style="color:white; background-repeat: no-repeat; background-size: cover; padding-top: 250px; padding-bottom: 100px; background-image: url(&quot;//d33rxv6e3thba6.cloudfront.net/2016/11/585694100110bbd3464f1265/18131-ggmvm5.jpeg&quot;); border-radius: 0px; ">
-      <h1>Developer.</h1>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-      <script>
-          function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-              //document.getElementById("main").style.marginLeft = "250px";
-              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-          }
-          
-          function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-              //document.getElementById("main").style.marginLeft= "0";
-              document.body.style.backgroundColor = "white";
-          }
-        </script>
-    </div>
-
-    <div id="main" class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div id="tools" style="padding:3%">
-            <h2>My Tools</h2>
-            <ul style="font-family:Arial, Helvetica, sans-serif; font-size:25px">
-              <li>Bank Tool</li>
-              <li>Profile Manager</li>
-              <li>Travel Planner</li>
-              <li>Image OCR</li>
-            </ul>
-          </div>
+    <section class="jumbotron text-center">
+      <p style="font-size: 200%"><em>Hey, I'm</em></p>
+      <p class="dash-highlight" style="font-size: 400%"><span><strong>Timothy Shee</strong></span></p>
+      <p style="font-size: 200%">Web Developer || Hackathon Lover || Gamer </p>
+      <button class="btn"><a href="https://www.linkedin.com/in/timothy-shee-aa46a5170/"><i class="fab fa-linkedin fa-2x" alt="Icon"></i></a></button>
+      <button class="btn"><a href="https://github.com/timothy-shee"><i class="fab fa-github fa-2x" alt="Icon"></i></a></button>
+    </section>
+      
+    <section id="projects" class="section scrollspy" style="background-color:#f2f2f2">
+      <h3 class="page-title white-text green"><font size="30" color="white"><span>Hackathons</span></font></h3>
+      <hr>
+      <div class="row nopad">
+        <div class="column">
+          <p align="right">
+              <img src="/resources/images/trshy-logo-lg.png" style="width:300px;height:200px;">
+          </p>
         </div>
-        <div class="col-sm-4">
-          <div id="visuals" style="padding:3%">
-            <h2>Front-End Visuals</h2>
-            <ul style="font-family:Arial, Helvetica, sans-serif; font-size:25px">
-              <li>D3.js</li>
-              <li>GoJS</li>
-              <li>jQuery</li>
-              <li>Angular</li>
-              <li>React</li>
-              <li>Vue.js</li>
-              <li>HTML Formatting</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div id="storage" style="padding:3%">
-          <h2>Back-end Work</h2>
-          <ul style="font-family:Arial, Helvetica, sans-serif; font-size:25px">
-            <li>MongoDB</li>
-            <li>SQL Server</li>
-            <li>MySQL</li>
-            <li>Google Cloud SQL</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div id="game" style="padding:3%">
-          <h2>Unity Game (with C#)</h2>
-          <h4>Features</h4>
-          <ul style="font-family:Arial, Helvetica, sans-serif; font-size:18px">
-              <li>Cool</li>
-              <li>Very Cool</li>
-            </ul>
-          <h4>Description</h4>
-          <p style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:18px">
-            Sample description.
+        <div class="column">
+          <h2><font size="30" color="#3366ff">MAHacks</font></h2>
+          <p><font size="5"color="#669900">Trshy</font></p>
+          <p><font size="5">at Prudential Center</font></p>
+          <p><font size="3">See it live: <a href="https://www.trshy.tech/">here</a></font></p>
+          <p align="left">
+            A utility tool to locate nearby trashcans.</br>
+            Allows users to mark locations of trashcans for other users.</br>
+            Currently uses Detroit's trashcan database to show nearby trashcans
           </p>
         </div>
       </div>
+      <div class="row nopad">
+        <div class="column nopad">
+            <h2 align="right"><font size="30" color="#3366ff">HackWITus</font></h2>
+            <p align="right"><font size="5" color="#669900">Behaza</font></p>
+            <p align="right"><font size="5">at Wentworth Institute of Technology</font></p>
+            <p align="right">    
+              Expedited connecting barbers with people. </br>
+              Users the wait times of nearby barber shops. </br>
+              Teamate plans to continue project in free time. </br>
+            </p>
+        </div>
+        <div class="column">
+          <p align="left"> 
+            <img src="/resources/images/barberslogo.png" style="width:400px;height:100px;">
+          </p>
+        </div>
+      </div>
+      <div class="row nopad">
+        <div class="column">
+          <p align="right">
+              <img src="/resources/images/hackumass.png" style="width:200px;height:200px;">
+          </p>
+        </div>
+        <div class="column">
+          <h2><font size="30" color="#3366ff">HackUMass</font></h2>
+          <p><font size="5" color="#669900">Air Keys</font></p>
+          <p><font size="5">at UMass Amherst</font></p>
+          <p align="left"> 
+              Created a motion activated music player that </br>
+              uses Leap Motion to detect gestures. </br>
+              These gestures are linked to media commands </br>
+              and can be used to control any music player.
+          </p>
+        </div>
+      </div>
+  </section>
+  <!--<section id="projects">
+    Bank Tool, add some tutorial projects I did
+  </section>-->
+  
+  <section id="skills" class="section scrollspy" style="background-color:#f9f2ec">
+    <h3 class="page-title white-text green"><font size="30" color="white">SKILLS</font></h3>
+    <hr> 
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">HTML/CSS</h4>
+          <div class="row text-center">
+            <div class="col s4 m2"><img alt src="resources/images/html-5-icon.png" class="responsive-img">HTML5</div>
+            <div class="col s4 m2"><img alt src="resources/images/html-5-icon.png" class="responsive-img">JSX</div>
+            <div class="col s4 m2"><img alt src="resources/images/html-5-icon.png" class="responsive-img">CSS3</div>
+            <div class="col s4 m2"><img alt src="resources/images/html-5-icon.png" class="responsive-img">Bootstrap</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">JavaScript</h4>
+          <div class="row text-center">
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">React</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">jQuery</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Angular</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Node</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Languages</h4>
+          <div class="row text-center">
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Java</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Python</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">JavaScript</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Web Servers</h4>
+          <div class="row text-center">
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Flask</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Tomcat</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Express</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Backend</h4>
+          <div class="row text-center">
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">MongoDB</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">MySQL</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Firebase</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Django</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Build Tools</h4>
+          <div class="row text-center">
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Gradle</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Maven</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Webpack</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Ant</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">OS-Related</h4>
+          <div class="row text-center">
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Windows</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">CentOS</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">VirtualBox</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">VMWare</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Other</h4>
+          <div class="row text-center">
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Jira</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Jenkins</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">GitLab</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">Heroku</div>
+            <div class="col s4 m2"><img alt="" src="resources/images/html-5-icon.png" class="responsive-img">PCF</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+  
+  <section>
+    <h2 class="text-center">At hackathons, I've worked with full stacks</h2>
+    <div align="center" style="size: 2000px 1000px">
+      <div style="display: inline-block; text-align: left;">
+          <p class="leftalign" style="font-size: 170%">frontend: React, Angular, and Vue.js</p>
+          <p class="leftalign" style="font-size: 170%">backend: Firebase, Django, Flask, Jersey </p>
+          <p class="leftalign" style="font-size: 170%">database: MongoDB, MySQL, SQL Server</p>
+          <p class="leftalign" style="font-size: 170%">languages: Java, Python, JavaScript</p>
+      </div>
+    </div>
+  </section>
+  <section class="jumbotron nopad">
+    <h1><p class="text-center" style="font-size: 60%"><strong>Here's what I've done so far</strong></p></h1>
+    <h5><font color="green">Position: Software Engineering Intern</font></h5>
+  </section>
   </div>
+</div>
 </body>
 </html> 
