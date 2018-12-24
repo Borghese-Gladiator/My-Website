@@ -1,0 +1,92 @@
+.main {
+    padding: 16px;
+    margin-top: 30px;
+  }
+  .icon-img {
+    margin: 0 auto;
+    max-height: 200px;
+    max-width: 200px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    width: 256px;
+    height: 256px;
+  }
+  .nopad {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .manualpad {
+    margin-top: 2%;
+    margin-bottom:2%;
+  }
+  .navbar {
+    overflow: hidden;
+    float: right;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .navbar a {
+    float: right;
+    /*color: #f2f2f2;*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color:#d9d9d9;
+    color:black;
+  }
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .btn {
+    background-color: rgb(137, 198, 218);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16 px;
+    cursor: pointer;
+  }
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+  .left-col-align {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+  }
+  .right-col-align {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  p.align-right {
+    text-align: right;
+  }
+  .dash-highlight { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:10px 0 20px; } 
+  .dash-highlight span { background:#fff; padding:0 10px; }

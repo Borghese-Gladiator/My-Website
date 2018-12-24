@@ -1,168 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <!-- Materialize - Compiled and minified CSS-->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
-    <!-- Custom Styles-->
-    <link rel="stylesheet" href="style.css">
-    <title>Timothy Shee | Developer Intern</title>
-    <meta property="og:title" content="Timothy Shee | Developer Intern">
-    <!-- <link rel="stylesheet" href="resources/css/styles.css" />-->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <style>
-      .main {
-        padding: 16px;
-        margin-top: 30px;
-      }
-      .icon-img {
-        margin: 0 auto;
-        max-height: 200px;
-        max-width: 200px;
-        padding-bottom: 10px;
-        text-align: center;
-        vertical-align: middle;
-        display: table-cell;
-        width: 256px;
-        height: 256px;
-      }
-      .nopad {
-        margin-top: 0%;
-        margin-bottom: 0%;
-      }
-      
-      /*.navbar {
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-
-      .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-
-      .navbar a:hover {
-        background: #ddd;
-        color: black;
-      }*/
-      .navbar {
-        overflow: hidden;
-        float: right;
-        top: 0;
-      }
-      .navbar a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      .navbar a:hover {
-        background-color:#d9d9d9;
-        color:black;
-      }
-      .navbar a.active {
-        background-color: #4CAF50;
-        color: white;
-      }
-      .btn {
-        background-color: rgb(137, 198, 218);
-        border: none;
-        color: white;
-        padding: 12px 16px;
-        font-size: 16 px;
-        cursor: pointer;
-      }
-      /* Darker background on mouse-over */
-      .btn:hover {
-        background-color: RoyalBlue;
-      }
-      .left-col-align {
-        position: relative;
-        width: 400px;
-        height: 200px;
-        border: 3px solid #73AD21;
-      }
-      .right-col-align {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 200px;
-        height: 100px;
-        border: 3px solid #73AD21;
-      }
-
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
-      }
-
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      p.align-right {
-        text-align: right;
-      }
-      .dash-highlight { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:10px 0 20px; } 
-      .dash-highlight span { background:#fff; padding:0 10px; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Timothy Shee | Developer Intern">
+  <title>Timothy Shee | Developer Intern</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+  <link rel="stylesheet" href="/resources/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="/resources/css/mystyles.css">
 </head>
 <body>
-
-  <div style="float: right; position: fixed">
-    <div class="navbar" style="background-color: #808080;">
-      <a href="index.html">Home</a>
-      <a href="me.html">About</a>
-      <a href="tools.html">Tools</a>
+  <nav style="float: right; position: fixed; background-color: #808080;">
+    <div class="navbar">      
+      <a href="me.html">Contact Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#hackathons">Hackathons</a>
+      <a href="#experience">Experience</a>
+      <a href="#me">About</a>
+      <a href="#home">Home</a>
     </div>
-  </div>
-    
-<!--    <button onClick="scrollHome()">Home</button>
-    <button onClick="scrollAbout()">About</button>
-    <button onClick="scrollPortfolio()">Portfolio</button>
-    <script>
-      function scrollHome() {
-        window.scrollTo(0,0);
-      }
-      function scrollAbout() {
-        window.scrollTo(0,100);
-      }
-      function scrollPortfolio() {
-        window.scrollTo(0, 300);
-      }
-    </script>-->
-    
-  <div class="jumbotron text-center _animate-background transition" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;}" style="background-repeat: no-repeat; background-size: 100% 100%; background-color: transparent;  background-image: url(&quot;resources/images/bz26-DEC-Taiwan.jpg&quot;); min-height: 0px; background-attachment: fixed; padding-top: 410px; padding-bottom: 430px;">
+  </nav>       
+  <div id="home" class="jumbotron text-center" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;}" style="background-repeat: no-repeat; background-size: 100% 100%; background-color: transparent;  background-image: url(&quot;resources/images/bz26-DEC-Taiwan.jpg&quot;); min-height: 0px; background-attachment: fixed; padding-top: 410px; padding-bottom: 430px;">
     <h1><p style="font-size: 130%;"><strong><font color="white">Developer.</font></strong></p></h1>
   </div>
-  <section class="jumbotron text-center">
+  <section id="me" class="jumbotron text-center">
     <p style="font-size: 200%"><em>Hey, I'm</em></p>
     <p class="dash-highlight" style="font-size: 400%"><span><strong>Timothy Shee</strong></span></p>
     <p style="font-size: 200%">Web Developer || Hackathon Lover || Gamer </p>
     <button class="btn"><a href="https://www.linkedin.com/in/timothy-shee-aa46a5170/"><i class="fab fa-linkedin fa-2x" alt="Icon"></i></a></button>
     <button class="btn"><a href="https://github.com/timothy-shee"><i class="fab fa-github fa-2x" alt="Icon"></i></a></button>
   </section>
-    
-  <section id="projects" class="section scrollspy" style="background-color:#f2f2f2">
-    <h3 class="page-title white-text green"><font size="30" color="white"><span>Hackathons</span></font></h3>
+  <section id="experience" class="section" style="background-color:#f5e6ff">
+    <h3 class="green"><font size="30" color="white">EXPERIENCE</font></h3>
+    <hr> 
+    <div class="row nopad">
+      <div class="column">
+        <p align="right">
+            <img src="resources/images/2000px-Avid_logo_purple_2017.svg.png" style="width:500px;height:165px;">
+        </p>
+      </div>
+      <div class="column" style="margin-bottom: 6%;">
+        <h4 class="manualpad"><font color="#3366ff">Avid Technology</font></h4>
+        <h6 class="manualpad"><font size="5" color="green">Software Engineering Intern, Aug 2018</font></h6>
+        <h6 class="nopad"><font size="4"><strong>Burlington, MA</strong></font></h6>
+        <ul align="left" class="manualpad">
+          <font color="#666666">
+          <li><font color="#404040"><strong>Implemented Powershell scripts</strong></font> to migrate source trees from AccuRev to GitLab. </br>
+            These scripts reduced source tree from 20 GB to 1.9 MB by moving binaries to an </br>
+            internal Nexus server and generating Gradle properties files to download them  </br>
+            automatically. Tested the migration by hosting a private GitLab server with a </br>
+            Linux VM on VirtualBox and set up CI to test build. </br>
+          </li>
+          <li>
+            <font color="#404040"><strong>Created Jenkins pipelines and executors</strong></font> to download nightly builds from internal </br>
+            server and run Windows Batch scripts automatically to test the installers. </br>    
+          </li>
+          <li>  
+            <font color="#404040"><strong>Developed a Profile Manager webapp</strong></font> with JavaScript, React, Tomcat, Jersey, </br>
+            MongoDB Java Driver and MongoDB. JavaScript calls REST endpoints to read/write </br> 
+            to the MongoDB database. Can store a profile with any number of name-value pairs </br>
+            and search with key, name, or value.
+          </li>
+          <li>
+            <font color="#404040"><strong>Used Agile through Jira</strong></font> to keep track of user stories in kanban board.
+          </li>
+          </font>
+        </ul>
+      </div>
+    </div>
+  </section>  
+  <section id="hackathons" class="section" style="background-color:#f2f2f2">
+    <h3 class="green"><font size="30" color="white"><span>Hackathons</span></font></h3>
     <hr>
     <div class="row nopad">
       <div class="column">
@@ -222,8 +135,8 @@
     Bank Tool, add some tutorial projects I did
   </section>-->
   
-  <section id="skills" class="section scrollspy" style="background-color:#f9f2ec">
-    <h3 class="page-title white-text green"><font size="30" color="white">SKILLS</font></h3>
+  <section id="skills" class="section" style="background-color:#f9f2ec">
+    <h3 class="green"><font size="30" color="white">SKILLS</font></h3>
     <hr> 
     <div class="container">
       <div class="card">
@@ -315,13 +228,29 @@
       </div>
     </div>
   </section>
-  <section id="experience" class="section scrollspy" style="background-color:#e6f0ff">
-      <h3 class="page-title white-text green"><font size="30" color="white">PROJECTS</font></h3>
-      <hr> 
-  </section>
-  <section id="experience" class="section scrollspy" style="background-color:#f5e6ff">
-      <h3 class="page-title white-text green"><font size="30" color="white">EXPERIENCE</font></h3>
-      <hr> 
+  <section id="projects" class="section" style="background-color:#e6f0ff">
+    <h3 class="green"><font size="30" color="white">PROJECTS</font></h3>
+    <hr>
+    <div class="row nopad">
+      <div class="column">
+        <p align="right">
+          <img src="resources/images/Affectiva_logo.jpg" style="width:232px;height:107px">
+          <img src="resources/images/google-maps.png" style="width:200px;height:200px;">
+          <img src="resources/images/youtube-icon.png" style="width:180px;height:125px;"> 
+        </p>
+      </div>
+      <div class="column">
+        <h2 class="nopad"><font size="30" color="#3366ff">External API Project</font></h2>
+        <p class="nopad"><font size="5" color="#669900">Nov 2018</font></p>
+        <p class="nopad"><font size="3">See it live: <a href="https://timothy-shee.github.io/API_Project/">here</a></font></p>
+        <p align="left">
+          Implemented a web app that called Youtube, Google Map/Calendar, </br>
+          and Affectiva’s emotion recognition API. Using AngularJS framework, </br>
+          users can enter a Youtube URL to find any video and use a webcam to see </br>
+          Affectiva interpreting their emotions in real-time.  </br>
+        </p>
+      </div>
+    </div>  
   </section>
 <!--<section>
       <h2 class="text-center">At hackathons, I've worked with full stacks</h2>
